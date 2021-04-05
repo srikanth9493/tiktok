@@ -1,0 +1,38 @@
+.videosidebar {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid green; */
+}
+
+.videosidebar__button {
+  padding: 20px;
+  text-align: center;
+}
+
+.videosidebar__button > img {
+  width: 30px;
+  object-fit: contain;
+}
+
+.videosidebar__button > img {
+  animation: spinTheRecord infinite 5s linear;
+}
+
+@keyframes spinTheRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .videosidebar__button {
+    padding: 10px;
+  }
+}
